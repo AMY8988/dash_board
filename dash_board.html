@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="main container-fluid">
+        <div class="row">
+             <div class=" col-sm-12 col-md-3 col-xl-2  bg-light vh-100 py-2 sidebar">
+                <div class="row">
+                    <div class=" p-2  d-flex justify-content-between align-items-center">
+                        <div class="brand d-flex justify-content-center align-items-center">
+                             <div class="bg-primary  p-1 rounded-circle me-2">
+                                <i class="fa-solid fa-briefcase p-1 text-light"></i>
+                             </div>
+                            <h5 class="m-0">My Shop</h5>
+                        </div>
+                       <button class="btn hide-sidebar d-block d-md-none">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                       </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-sm-12 col-md-9 col-xl-10 vh-100 py-2 content">
+
+                <div class="row px-1 sticky-top">
+                    
+                        <div class="col-12 d-flex justify-content-between align-items-center bg-primary p-2 rounded header  ">
+
+                           <button class="btn show-sidebar  d-block d-md-none">
+                             <i class="fa-solid fa-bars"></i>
+                           </button>
+
+                           <form action="" class=" d-none d-sm-block">
+                               <div class="form">
+                                   <input type="text" class="me-2">
+                                   <button class="btn btn-sm btn-light">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                   </button>
+                               </div>
+                           </form>
+
+                           <div class="dropdown">
+                            <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/WIN_20211220_21_57_25_Pro.jpg" class="profile rounded-circle" alt="">
+                                Amy Moe Zaw
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+
+                        </div>
+                   
+                </div>
+
+
+                <div class="row">
+
+
+                    <div class="col-12 p-2 col-md-6 col-lg-6 col-xl-3  ">
+                       <div class="card mb-2 status-card" onclick="go('https://google.com')">
+                            <div class="card-body  roundedbg-light">
+                                <div class="row ">
+                                    <div class="col-3 align-items-center">
+                                        <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="h5 counter-up fw-bolder">12356</span>
+                                        <p class="text-black-50 fw-bold m-0 ">Today Orders</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="col-12 p-2 col-md-6 col-lg-6 col-xl-3  ">
+                        <div class="card mb-2 status-card onclick="go('https://google.com')"">
+                             <div class="card-body rounded bg-light">
+                                 <div class="row ">
+                                     <div class="col-3 align-items-center">
+                                         <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                     </div>
+                                     <div class="col-9">
+                                         <span class="h5 counter-up fw-bolder">453</span>
+                                         <p class="text-black-50 fw-bold m-0 ">Total Users</p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 p-2 col-md-6 col-lg-6 col-xl-3  ">
+                        <div class="card mb-2 status-card onclick="go('https://google.com')">
+                             <div class="card-body rounded bg-light">
+                                 <div class="row ">
+                                     <div class="col-3 align-items-center">
+                                         <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                     </div>
+                                     <div class="col-9">
+                                         <span class="h5 counter-up fw-bolder">233</span>
+                                         <p class="text-black-50 fw-bold m-0 ">Total Items</p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 p-2 col-md-6 col-lg-6 col-xl-3  ">
+                        <div class="card mb-2 status-card onclick="go('https://google.com')"">
+                             <div class="card-body rounded bg-light">
+                                 <div class="row ">
+                                     <div class="col-3 align-items-center">
+                                         <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                     </div>
+                                     <div class="col-9">
+                                         <span class="h5 counter-up fw-bold">14</span>
+                                         <p class="text-black-50 fw-bold m-0 ">Support Location</p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row d-flex align-items-end ">
+                    <!-- chart -->
+                    <div class="col-12 col-lg-12 col-xl-7 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+
+                                <!-- header -->
+                                <div class=" d-flex align-items-center justify-content-between mb-3">
+                                    <h4 class=" m-0">Order and Viewer</h4>
+                                    <div class=" ">
+
+                                         <img src="img/WIN_20211220_21_57_25_Pro.jpg" class=" profile rounded-circle border border-1" style="margin-left: -20px;" alt="">
+                                         <img src="img/WIN_20211220_21_57_25_Pro.jpg" class=" profile rounded-circle border border-1" style="margin-left: -20px;" alt="">
+                                         <img src="img/WIN_20211220_21_57_25_Pro.jpg" class=" profile rounded-circle border border-1" style="margin-left: -20px;" alt="">
+                                         <img src="img/WIN_20211220_21_57_25_Pro.jpg" class=" profile rounded-circle border border-1" style="margin-left: -20px;" alt="">
+                                         <img src="img/WIN_20211220_21_57_25_Pro.jpg" class=" profile rounded-circle border border-1" style="margin-left: -20px;" alt="">
+
+                                    </div>
+                                </div>
+
+                                <!-- chart -->
+                                <canvas id="ov" height="170"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="col-12 col-md-6 col-xl-5 mb-4">
+                        <div class="card  order-place">
+                            <div class="card-body ">
+
+                                <div id="carouselExampleIndicators" class="carousel item-carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators" style="bottom: -25px;">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" bg-primary" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=" bg-primary" aria-label="Slide 3"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"class=" bg-primary" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class=" item-card ">
+                                            <div class="d-flex align-items-end justify-content-between">
+                                                <div class=" flex-grow-1 mb-4">
+                                                    <h5>Coffee Cup</h5>
+                                                    <p class=" text-black-50 mb-1">2500 MMK</p>
+                                                    <div class="progress ">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <img src="img/item1.png" class=" item-card-img" alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class=" item-card ">
+                                            <div class="d-flex align-items-end justify-content-between">
+                                                <div class=" flex-grow-1 mb-4">
+                                                    <h5>Coffee Cup</h5>
+                                                    <p class=" text-black-50 mb-1">2500 MMK</p>
+                                                    <div class="progress ">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <img src="img/item2.png" class=" item-card-img" alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class=" item-card ">
+                                            <div class="d-flex align-items-end justify-content-between">
+                                                <div class=" flex-grow-1 mb-4">
+                                                    <h5>Coffee Cup</h5>
+                                                    <p class=" text-black-50 mb-1">2500 MMK</p>
+                                                    <div class="progress ">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <img src="img/item3.png" class=" item-card-img" alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class=" item-card ">
+                                            <div class="d-flex align-items-end justify-content-between">
+                                                <div class=" flex-grow-1 mb-4">
+                                                    <h5>Coffee Cup</h5>
+                                                    <p class=" text-black-50 mb-1">2500 MMK</p>
+                                                    <div class="progress ">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <img src="img/item4.png" class=" item-card-img" alt="">
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-5">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <!-- header -->
+                                <div class=" d-flex align-items-center justify-content-between mb-3">
+                                    <h3 class=" m-0">Order and Places</h3>
+                                    <div class=" ">
+                                        <i class="fa-solid fa-chart-pie h3"></i>
+                                    </div>
+                                </div>
+
+                                <!-- chart -->
+                                <canvas id="op" width="400" height="150"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>  
+            
+        </div>
+    </section>
+    
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+    <script src="vendor/jQuery/jquery.js"></script>
+    <script src="vendor/wayPoint/lib/jquery.waypoints.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.js"></script>
+    <script src="vendor/Chart/chart.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

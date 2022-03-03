@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+:root{
+    --primary-soft :#e9e8e8 ;
+}
+*{
+    font-family: "Roboto" , sans-serif ;
+
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .sidebar.open{
+    display: block !important; 
+    position: fixed;
+    width: 250px;
+    z-index: 1000;
+   
+} */
+
+.header{
+    box-shadow: 0 0 10px #0a0a0a50;
+}
+
+.profile{
+    width: 40px;
+    height: auto;
+}
+
+.fa-circle-xmark{
+  cursor: pointer;
+}
+
+.content{
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow: 0 0 15px #bdbdbd inset ;
+}
+
+
+
+.form input{
+    height: 35px;
+}
+
+
+
+.show-sidebar:focus,.hide-sidebar:focus{
+    box-shadow: none;
+}
+
+.card{
+    border: none;
+}
+
+.status-card{
+    transition: 0.3s;
+}
+
+.status-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0  10px #c0c0c0;
+}
+
+.status-card:active{
+    transform: scale(1.03);
+   
+}
+
+.item-carousel{
+    margin-top: -130px;
+}
+
+
+
+.item-card-img{
+    height: 250px;
+}
+
+/* @media screen and (max-width: 992px){
+    .order-viewer{
+        margin-bottom: 130px;
+    }
+} */
+
+@media screen and  (max-width: 768px){
+
+    .sidebar{
+        display: block !important; 
+        position: fixed;
+        width: 250px;
+        z-index: 2000;
+        margin-left: -100%;
+    }
+
+    .order-place{
+        margin-top: 100px;
+    }
+
+    
+}
