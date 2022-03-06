@@ -96,7 +96,7 @@ const myChart = new Chart(ctx, {
     }
 });
 
-let places =  [ "MYD" , "YGN" , "NPT" , "SHAN" , "MGW"];
+let places =  [ "MYD" , "YGN" , "NPT" , "SHAN" ];
 let orderFromPlace = [5,15,4,9,7];
 
 
@@ -153,3 +153,4 @@ const opChart = new Chart(op, {
         }
     }
 });
+

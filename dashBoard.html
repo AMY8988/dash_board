@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DashBoard</title>
 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
@@ -14,13 +14,15 @@
 
     <section class="main container-fluid">
         <div class="row">
-             <div class=" col-sm-12 col-md-3 col-xl-2  bg-light vh-100 py-2 sidebar">
+
+            <!-- sidebar-area -->
+            <div class=" col-sm-12 col-md-3 col-xl-2  bg-light vh-100 py-2 sidebar">
                 <div class="row">
                     <div class=" p-2  d-flex justify-content-between align-items-center">
                         <div class="brand d-flex justify-content-center align-items-center">
-                             <div class="bg-primary  p-1 rounded-circle me-2">
+                            <div class="bg-primary  p-1 rounded-circle me-2">
                                 <i class="fa-solid fa-briefcase p-1 text-light"></i>
-                             </div>
+                            </div>
                             <h5 class="m-0">My Shop</h5>
                         </div>
                        <button class="btn hide-sidebar d-block d-md-none">
@@ -29,9 +31,9 @@
                     </div>
                 </div>
             </div>
-
+            <!-- content-area -->
             <div class=" col-sm-12 col-md-9 col-xl-10 vh-100 py-2 content">
-
+                 <!-- navigation-bar -->
                 <div class="row px-1 sticky-top">
                     
                         <div class="col-12 d-flex justify-content-between align-items-center bg-primary p-2 rounded header  ">
@@ -65,10 +67,9 @@
                    
                 </div>
 
-
+                 <!-- Item-Cards -->
                 <div class="row">
-
-
+               
                     <div class="col-12 p-2 col-md-6 col-lg-6 col-xl-3  ">
                        <div class="card mb-2 status-card" onclick="go('https://google.com')">
                             <div class="card-body  roundedbg-light">
@@ -90,7 +91,7 @@
                              <div class="card-body rounded bg-light">
                                  <div class="row ">
                                      <div class="col-3 align-items-center">
-                                         <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                         <i class="fa-solid fa-users fs-1 text-primary"></i>
                                      </div>
                                      <div class="col-9">
                                          <span class="h5 counter-up fw-bolder">453</span>
@@ -106,7 +107,7 @@
                              <div class="card-body rounded bg-light">
                                  <div class="row ">
                                      <div class="col-3 align-items-center">
-                                         <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                         <i class="fa-solid fa-box-open fs-1 text-primary"></i>
                                      </div>
                                      <div class="col-9">
                                          <span class="h5 counter-up fw-bolder">233</span>
@@ -122,7 +123,7 @@
                              <div class="card-body rounded bg-light">
                                  <div class="row ">
                                      <div class="col-3 align-items-center">
-                                         <i class="fa-solid fa-bag-shopping fs-1 text-primary"></i>
+                                         <i class="fa-solid fa-location-dot fs-1 text-primary"></i>
                                      </div>
                                      <div class="col-9">
                                          <span class="h5 counter-up fw-bold">14</span>
@@ -237,8 +238,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6 col-xl-5">
+                    <!-- chart-circle -->
+                    <div class="col-12 col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
 
@@ -253,6 +254,88 @@
                                 <!-- chart -->
                                 <canvas id="op" width="400" height="150"></canvas>
                             </div>
+                        </div>
+                    </div>
+                    <!-- data-table -->
+                    <div class="col-12 col-xl-8">
+                        <div class="card subscriber-list">
+                            
+                                <div class="card-content p-2 d-flex justify-content-between " style="user-select: auto;">
+                                   <h4 class="card-title mb-0" style="user-select: auto;">Subscriber List</h4> <i class="fa-solid fa-ellipsis-vertical h5"></i>
+                                </div>
+                                <table class="table table-hover table-striped mb-0" style="user-select: auto;">
+                                   <thead style="user-select: auto;">
+                                      <tr style="user-select: auto;">
+                                         <th style="user-select: auto;">Name</th>
+                                         <th style="user-select: auto;">Company</th>
+                                         <th style="user-select: auto;">Start Date</th>
+                                         <th style="user-select: auto;">Status</th>
+                                         <th style="user-select: auto;">Amount</th>
+                                         <th style="user-select: auto;">Action</th>
+                                      </tr>
+                                   </thead>
+                                   <tbody style="user-select: auto;" class="sub-list">
+                                      <tr style="user-select: auto;">
+                                         <td style="user-select: auto;">Michael Austin</td>
+                                         <td style="user-select: auto;">ABC Fintech LTD.</td>
+                                         <td style="user-select: auto;">Jan 1,2019</td>
+                                         <td style="user-select: auto;"><span class="badge rounded-pill bg-danger" style="user-select: auto;">Close</span></td>
+                                         <td style="user-select: auto;">$ 1000.00</td>
+                                         <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                      </tr>
+                                      <tr style="user-select: auto;">
+                                         <td style="user-select: auto;">Aldin Rakić</td>
+                                         <td style="user-select: auto;">ACME Pvt LTD.</td>
+                                         <td style="user-select: auto;">Jan 10,2019</td>
+                                         <td style="user-select: auto;"><span class="badge rounded-pill bg-success" style="user-select: auto;">Open</span></td>
+                                         <td style="user-select: auto;">$ 3000.00</td>
+                                         <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                      </tr>
+                                      <tr style="user-select: auto;">
+                                         <td style="user-select: auto;">İris Yılmaz</td>
+                                         <td style="user-select: auto;">Collboy Tech LTD.</td>
+                                         <td style="user-select: auto;">Jan 12,2019</td>
+                                         <td style="user-select: auto;"><span class="badge rounded-pill bg-success" style="user-select: auto;">Open</span></td>
+                                         <td style="user-select: auto;">$ 2000.00</td>
+                                         <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                      </tr>
+                                      <tr style="user-select: auto;">
+                                         <td style="user-select: auto;">Lidia Livescu</td>
+                                         <td style="user-select: auto;">My Fintech LTD.</td>
+                                         <td style="user-select: auto;">Jan 14,2019</td>
+                                         <td style="user-select: auto;"><span class="badge rounded-pill bg-danger" style="user-select: auto;">Close</span></td>
+                                         <td style="user-select: auto;">$ 1100.00</td>
+                                         <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                      </tr>
+                                      <tr style="user-select: auto;">
+                                        <td style="user-select: auto;">Lidia Livescu</td>
+                                        <td style="user-select: auto;">My Fintech LTD.</td>
+                                        <td style="user-select: auto;">Jan 14,2019</td>
+                                        <td style="user-select: auto;"><span class="badge rounded-pill bg-danger" style="user-select: auto;">Close</span></td>
+                                        <td style="user-select: auto;">$ 1100.00</td>
+                                        <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                     </tr>
+                                     
+                                     <tr style="user-select: auto;">
+                                        <td style="user-select: auto;">İris Yılmaz</td>
+                                        <td style="user-select: auto;">Collboy Tech LTD.</td>
+                                        <td style="user-select: auto;">Jan 12,2019</td>
+                                        <td style="user-select: auto;"><span class="badge rounded-pill bg-success" style="user-select: auto;">Open</span></td>
+                                        <td style="user-select: auto;">$ 2000.00</td>
+                                        <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                     </tr>
+                                     <tr style="user-select: auto;">
+                                        <td style="user-select: auto;">İris Yılmaz</td>
+                                        <td style="user-select: auto;">Collboy Tech LTD.</td>
+                                        <td style="user-select: auto;">Jan 12,2019</td>
+                                        <td style="user-select: auto;"><span class="badge rounded-pill bg-success" style="user-select: auto;">Open</span></td>
+                                        <td style="user-select: auto;">$ 2000.00</td>
+                                        <td class="center-align" style="user-select: auto;"><a href="#" style="user-select: auto;"><i class="fa-solid fa-trash-can ps-3 text-danger"></i></a></td>
+                                     </tr>
+                                    
+                                   </tbody>
+                                </table>
+                             
                         </div>
                     </div>
 

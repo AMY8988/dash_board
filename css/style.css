@@ -82,6 +82,18 @@ body{
     height: 250px;
 }
 
+.subscriber-list{
+    cursor: pointer;
+}
+
+.sub-list tr{
+  transition: 0.3s;
+}
+
+.sub-list tr:active{
+   transform: scale(1.01);
+}
+
 /* @media screen and (max-width: 992px){
     .order-viewer{
         margin-bottom: 130px;
