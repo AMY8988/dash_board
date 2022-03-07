@@ -1,5 +1,33 @@
+//For Item-list.html
+$(".full-screen-btn").click(function(){
+    let current = $(this).closest(".card");
+
+    $(this).closest(".card").toggleClass("full-screen-card");
+    $("#example").toggleClass("example");
+
+    if(current.hasClass("full-screen-card")){
+        $(this).html(`<i class="fa-solid fa-down-left-and-up-right-to-center"></i>`)
+    }else{
+         $(this).html(`<i class="fa-solid fa-up-right-and-down-left-from-center"></i>`)
+    };
+});
 
 
+//scrollTop For Menu Bar
+let screenHeight = $(window).height();
+let currentMenuHeight = $(".nav-menu .Active").offset().top;
+
+if(currentMenuHeight> screenHeight*0.8){
+    $(".sidebar").animate({
+        scrollTop:currentMenuHeight-100,
+    },1000);
+};
+
+
+
+
+
+//for template.html
 $(".show-sidebar").click(function(){
    $(".sidebar").animate({marginLeft : 0 } )
   
@@ -25,7 +53,7 @@ let dateArr = ["Jul 21","Jul 20","Jul 19","Jul 18","Jul 17","Jul 16","Jul 15","J
 let orderCountArr = [ 7, 5, 6, 4, 6, 4, 8, 6, 8, 9, 6];
 let viewerCountArr=[13,12,15,14,20,17,19,16,23,33,16];
 
-const ctx = document.getElementById('ov').getContext('2d');
+const ctx = document.getElementById('ov');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -62,7 +90,7 @@ const myChart = new Chart(ctx, {
                 ],
                 borderWidth: 1,
 
-                
+                tension: 0.3
             }
         
         ]
@@ -100,7 +128,7 @@ let places =  [ "MYD" , "YGN" , "NPT" , "SHAN" ];
 let orderFromPlace = [5,15,4,9,7];
 
 
-const op = document.getElementById('op').getContext('2d');
+const op = document.getElementById('op');
 const opChart = new Chart(op, {
     type: 'doughnut',
     data: {
@@ -125,6 +153,8 @@ const opChart = new Chart(op, {
                 'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1
+
+            
         }]
     },
     options: {
@@ -154,3 +184,8 @@ const opChart = new Chart(op, {
     }
 });
 
+
+
+// $(".full-screen-btn").click(function(){
+//         console.log("hello");
+// });
